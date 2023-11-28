@@ -1,0 +1,42 @@
+Отобразить справку по командам:
+
+#?
+
+
+Отобразить состояние интерфейсов:
+
+#show interface status
+#show ip interface brief
+
+
+Перейти в режим конфигурации:
+
+#conf t
+
+
+Завершить режим конфигурации:
+
+#exit
+
+
+Создать VLAN:
+
+#vlan database
+(vlan)#vlan 20
+(vlan)#exit
+#conf t
+(config)#int f1/1
+(config-if)#switchport mode access
+(config-if)#switchport access VLAN 20
+(config-if)#no shut
+
+Trunk:
+
+#conf t
+(config)#int f1/1
+(config-if)#switchport mode trunk
+(config-if)#switchport trunk encap dot1q
+
+Сохранить настройки:
+
+#write

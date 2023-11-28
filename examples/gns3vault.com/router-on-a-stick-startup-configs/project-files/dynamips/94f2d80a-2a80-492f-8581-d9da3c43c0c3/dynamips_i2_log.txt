@@ -1,0 +1,36 @@
+Nov 16 06:42:54.862 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 16 06:42:54.862 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56303.
+Nov 16 06:42:54.869 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 16 06:42:54.869 HYPERVISOR: exec_cmd: hypervisor working_dir /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips 
+Nov 16 06:42:54.869 GENERAL: working_dir=/home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips
+Nov 16 06:42:54.870 HYPERVISOR: exec_cmd: hypervisor working_dir /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips/94f2d80a-2a80-492f-8581-d9da3c43c0c3 
+Nov 16 06:42:54.870 GENERAL: working_dir=/home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips/94f2d80a-2a80-492f-8581-d9da3c43c0c3
+Nov 16 06:42:54.870 HYPERVISOR: exec_cmd: vm create John 2 c3725 
+Nov 16 06:42:54.870 VM: VM John created.
+Nov 16 06:42:54.871 HYPERVISOR: exec_cmd: vm set_con_tcp_port John 5002 
+Nov 16 06:42:54.871 HYPERVISOR: exec_cmd: vm set_aux_tcp_port John 5003 
+Nov 16 06:42:54.871 HYPERVISOR: exec_cmd: c3725 get_mac_addr John 
+Nov 16 06:42:54.872 HYPERVISOR: exec_cmd: vm get_status John 
+Nov 16 06:42:54.873 HYPERVISOR: exec_cmd: vm set_idle_pc John 0x60bf8ba0 
+Nov 16 06:42:54.884 HYPERVISOR: exec_cmd: vm set_ios John /home/u/GNS3/images/IOS/C3725-AD.BIN 
+Nov 16 06:42:54.886 HYPERVISOR: exec_cmd: c3725 set_mac_addr John c202.08e3.0000 
+Nov 16 06:42:54.887 HYPERVISOR: exec_cmd: vm set_ram John 256 
+Nov 16 06:42:56.014 HYPERVISOR: exec_cmd: nio create_udp udp-e7b51e57-6021-4304-a835-5f1308a199fc 10006 127.0.0.1 10007 
+Nov 16 06:42:56.232 HYPERVISOR: exec_cmd: vm slot_add_nio_binding John 0 0 udp-e7b51e57-6021-4304-a835-5f1308a199fc 
+Nov 16 06:42:56.232 HYPERVISOR: exec_cmd: vm get_status John 
+Nov 16 06:43:05.487 HYPERVISOR: exec_cmd: vm set_ghost_status John 2 
+Nov 16 06:43:05.494 HYPERVISOR: exec_cmd: vm set_ghost_file John /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips/C3725-AD.BIN-256.ghost 
+Nov 16 06:43:05.496 HYPERVISOR: exec_cmd: vm get_status John 
+Nov 16 06:43:05.525 HYPERVISOR: exec_cmd: vm set_config John configs/i2_startup-config.cfg 
+Nov 16 06:43:05.527 HYPERVISOR: exec_cmd: vm start John 
+Nov 16 06:48:52.155 HYPERVISOR: exec_cmd: vm get_status John 
+Nov 16 06:48:52.157 HYPERVISOR: exec_cmd: vm stop John 
+Nov 16 06:48:52.287 VM: VM John shutdown.
+Nov 16 06:48:52.291 HYPERVISOR: exec_cmd: vm extract_config John 
+Nov 16 06:48:52.474 HYPERVISOR: exec_cmd: vm get_status John 
+Nov 16 06:48:52.479 HYPERVISOR: exec_cmd: vm extract_config John 
+Nov 16 06:48:52.480 HYPERVISOR: exec_cmd: vm delete John 
+Nov 16 06:48:52.480 VM: VM John destroyed.
+Nov 16 06:50:00.927 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 16 06:50:01.301 HYPERVISOR: Stopped.
+Nov 16 06:50:01.301 GENERAL: reset done.

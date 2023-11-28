@@ -1,0 +1,19 @@
+Nov 16 06:42:55.243 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 16 06:42:55.243 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49319.
+Nov 16 06:42:55.257 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 16 06:42:55.259 HYPERVISOR: exec_cmd: hypervisor working_dir /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips 
+Nov 16 06:42:55.259 GENERAL: working_dir=/home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips
+Nov 16 06:42:55.262 HYPERVISOR: exec_cmd: ethsw create SW1 
+Nov 16 06:42:55.870 HYPERVISOR: exec_cmd: nio create_udp udp-d4e126a2-3331-45e0-be01-13e3d7641a09 10001 127.0.0.1 10000 
+Nov 16 06:42:55.870 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-d4e126a2-3331-45e0-be01-13e3d7641a09 
+Nov 16 06:42:55.884 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-d4e126a2-3331-45e0-be01-13e3d7641a09 3 
+Nov 16 06:42:56.281 HYPERVISOR: exec_cmd: nio create_udp udp-a479f57e-9e16-4d3a-9554-f71d28578325 10005 127.0.0.1 10004 
+Nov 16 06:42:56.282 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-a479f57e-9e16-4d3a-9554-f71d28578325 
+Nov 16 06:42:56.284 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-a479f57e-9e16-4d3a-9554-f71d28578325 2 
+Nov 16 06:42:56.451 HYPERVISOR: exec_cmd: nio create_udp udp-9855533e-2a99-4c64-9587-876dd6468bdd 10008 127.0.0.1 10009 
+Nov 16 06:42:56.452 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-9855533e-2a99-4c64-9587-876dd6468bdd 
+Nov 16 06:42:56.469 HYPERVISOR: exec_cmd: ethsw set_dot1q_port SW1 udp-9855533e-2a99-4c64-9587-876dd6468bdd 4 
+Nov 16 06:48:52.323 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Nov 16 06:48:52.381 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 16 06:48:52.483 HYPERVISOR: Stopped.
+Nov 16 06:48:52.483 GENERAL: reset done.

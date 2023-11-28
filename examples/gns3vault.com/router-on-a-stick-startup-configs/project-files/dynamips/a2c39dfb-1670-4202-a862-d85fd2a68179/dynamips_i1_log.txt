@@ -1,0 +1,51 @@
+Nov 16 06:42:54.760 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 16 06:42:54.760 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53151.
+Nov 16 06:42:54.764 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 16 06:42:54.768 HYPERVISOR: exec_cmd: hypervisor working_dir /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips 
+Nov 16 06:42:54.768 GENERAL: working_dir=/home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips
+Nov 16 06:42:54.769 HYPERVISOR: exec_cmd: hypervisor working_dir /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips/a2c39dfb-1670-4202-a862-d85fd2a68179 
+Nov 16 06:42:54.770 GENERAL: working_dir=/home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips/a2c39dfb-1670-4202-a862-d85fd2a68179
+Nov 16 06:42:54.772 HYPERVISOR: exec_cmd: vm create Hadley 1 c3725 
+Nov 16 06:42:54.772 VM: VM Hadley created.
+Nov 16 06:42:54.774 HYPERVISOR: exec_cmd: vm set_con_tcp_port Hadley 5000 
+Nov 16 06:42:54.774 HYPERVISOR: exec_cmd: vm set_aux_tcp_port Hadley 5001 
+Nov 16 06:42:54.774 HYPERVISOR: exec_cmd: c3725 get_mac_addr Hadley 
+Nov 16 06:42:54.775 HYPERVISOR: exec_cmd: vm get_status Hadley 
+Nov 16 06:42:54.775 HYPERVISOR: exec_cmd: vm set_idle_pc Hadley 0x60bf8ba0 
+Nov 16 06:42:54.778 HYPERVISOR: exec_cmd: vm set_ios Hadley /home/u/GNS3/images/IOS/C3725-AD.BIN 
+Nov 16 06:42:54.779 HYPERVISOR: exec_cmd: c3725 set_mac_addr Hadley c201.08c5.0000 
+Nov 16 06:42:54.780 HYPERVISOR: exec_cmd: vm set_ram Hadley 256 
+Nov 16 06:42:55.591 HYPERVISOR: exec_cmd: nio create_udp udp-bc968b1c-6f7b-4e55-9e7d-8a2102aee18f 10002 127.0.0.1 10003 
+Nov 16 06:42:55.849 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Hadley 0 0 udp-bc968b1c-6f7b-4e55-9e7d-8a2102aee18f 
+Nov 16 06:42:55.852 HYPERVISOR: exec_cmd: vm get_status Hadley 
+Nov 16 06:43:04.948 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Nov 16 06:43:04.949 VM: VM Ghost created.
+Nov 16 06:43:04.969 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/u/GNS3/images/IOS/C3725-AD.BIN 
+Nov 16 06:43:04.970 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 16 06:43:04.979 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips/C3725-AD.BIN-256.ghost 
+Nov 16 06:43:04.980 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 16 06:43:04.982 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 16 06:43:04.994 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Nov 16 06:43:05.006 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 16 06:43:05.303 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 16 06:43:05.303 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 16 06:43:05.464 VM: VM Ghost shutdown.
+Nov 16 06:43:05.473 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 16 06:43:05.475 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 16 06:43:05.475 VM: VM Ghost destroyed.
+Nov 16 06:43:05.484 HYPERVISOR: exec_cmd: vm set_ghost_status Hadley 2 
+Nov 16 06:43:05.486 HYPERVISOR: exec_cmd: vm set_ghost_file Hadley /home/u/Desktop/examples/router-on-a-stick-startup-configs/project-files/dynamips/C3725-AD.BIN-256.ghost 
+Nov 16 06:43:05.487 HYPERVISOR: exec_cmd: vm get_status Hadley 
+Nov 16 06:43:05.495 HYPERVISOR: exec_cmd: vm set_config Hadley configs/i1_startup-config.cfg 
+Nov 16 06:43:05.496 HYPERVISOR: exec_cmd: vm start Hadley 
+Nov 16 06:48:52.154 HYPERVISOR: exec_cmd: vm get_status Hadley 
+Nov 16 06:48:52.156 HYPERVISOR: exec_cmd: vm stop Hadley 
+Nov 16 06:48:52.309 VM: VM Hadley shutdown.
+Nov 16 06:48:52.311 HYPERVISOR: exec_cmd: vm extract_config Hadley 
+Nov 16 06:48:52.468 HYPERVISOR: exec_cmd: vm get_status Hadley 
+Nov 16 06:48:52.469 HYPERVISOR: exec_cmd: vm extract_config Hadley 
+Nov 16 06:48:52.470 HYPERVISOR: exec_cmd: vm delete Hadley 
+Nov 16 06:48:52.473 VM: VM Hadley destroyed.
+Nov 16 06:48:52.479 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 16 06:48:52.598 HYPERVISOR: Stopped.
+Nov 16 06:48:52.598 GENERAL: reset done.

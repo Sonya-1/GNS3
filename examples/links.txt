@@ -1,0 +1,13 @@
+https://techreally.com/router-on-a-stick/
+
+https://networklessons.com/switching/intervlan-routing
+
+
+
+https://www.firewall.cx/cisco/cisco-routers/cisco-router-8021q-router-stick.html
+
+https://www.grandmetric.com/knowledge-base/design_and_configure/router-on-a-stick-approach-cisco-configuration/
+
+https://gns3vault.com/network-services/router-on-a-stick
+
+
